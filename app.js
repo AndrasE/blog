@@ -4,9 +4,10 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const app = express();
+const favicon = require('serve-favicon')
 
-const homeStartingContent = "This project was part of my study when i had to create a blog site which uses a database in the background. This means whichever part of the world you reach this site from, the posts will remain unchanged. The cool part all off this that posts can be created/deleted by yourself and it will be stored in a cloud database (i think the free server is in N. Virginia). If you go to the compose section you can add anything you like which will be appearing on the home screen. If you click read more (obviously you can read more lol), but you also able to delete the chosen post. Later i might will add and update post button and also a sign-in section as at this point not just you an me, but anyone have the authority to write/delete.. But thats gonna be a hella of work, so be patient. Now i gotta move on, goodbye dear visitor! 😘";
-const aboutContent = "Not much to say here, just trying to study. For this project i used Node.js with Ejs, Express, Bodyparser and Mongoose. The webpage built with Bootstap 3 and I styled it here and there. The page hosted deployed on Heroku via Github the database in the back on a Mongoose server. Its a small step for kitty, but a bloody long crawling for a snail. Content over, class dismissed. 🐌";
+const homeStartingContent = "Please feel free to compose and share your blogposts. The site is very simple and self-explanatory. Please be polite!";
+const aboutContent = "This project was part of my studies on Udemy. It uses Node, Express, Bodyparser, Ejs. The webpage designed with Bootstap 3 and I styled it here and there. The page deployed on Heroku via Github the database is located on AWS North-Virginia using mongoDB. ";
 
 // ejs,bodyParser,css-public //
 app.set('view engine', 'ejs');
@@ -15,8 +16,11 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
+
+
 //mongoose.connect//
-mongoose.connect("mongodb+srv://andras:Eaeaea123@cluster0.zfr0d.mongodb.net/blogDB", {
+mongoose.connect("mongodb+srv://andras:" + process.env.MONGOOSE_PASS + "@cluster0.zfr0d.mongodb.net/blogDB", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
