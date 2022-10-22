@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const app = express();
-const favicon = require('serve-favicon')
+
 
 const homeStartingContent = "Please feel free to compose and share your blogposts. The site is very simple and self-explanatory. Please be polite!";
 const aboutContent = "This project was part of my studies on Udemy. It uses Node, Express, Bodyparser, Ejs. The webpage designed with Bootstap 3 and I styled it here and there. The page deployed on Heroku via Github the database is located on AWS North-Virginia using mongoDB. ";
@@ -16,7 +16,6 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 
 //mongoose.connect//
