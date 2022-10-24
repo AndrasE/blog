@@ -113,10 +113,6 @@ p {
   padding-bottom: 25px;
 }
 
-p:nth-last-child(2) {
-  margin-bottom: 20px;
-}
-
 p:last-child {
   padding-bottom: 0;
 }
