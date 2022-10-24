@@ -1,7 +1,7 @@
 html {
   min-height: 100%;
   position: relative;
-  margin: 0;
+  margin: 0 0 35px;
   width: 100%;
 }
 
@@ -112,9 +112,11 @@ hr {
 p {
   padding-bottom: 25px;
 }
+
 p:last-child {
   padding-bottom: 0;
 }
+
 p a {
   font-weight: bold;
 }
