@@ -113,7 +113,6 @@ p {
   padding-bottom: 25px;
 }
 
-
 p:last-child {
   padding-bottom: 0;
 }
@@ -140,7 +139,7 @@ a:hover {
 width: 100%;
  position: relative;
  display: inline-flex;
- top: 130px;
+ top: 100px;
 }
 
 .kitty img {
