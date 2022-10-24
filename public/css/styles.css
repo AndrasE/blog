@@ -112,7 +112,9 @@ hr {
 p {
   padding-bottom: 25px;
 }
-
+p:last-child {
+  padding-bottom: 0;
+}
 p a {
   font-weight: bold;
 }
