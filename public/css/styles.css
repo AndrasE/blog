@@ -108,6 +108,11 @@ hr {
   font-weight: normal;
 }
 
+
+p {
+  padding-bottom: 25px;
+}
+
 p a {
   font-weight: bold;
 }
