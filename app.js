@@ -6,12 +6,12 @@ const mongoose = require("mongoose");
 const app = express();
 var favicon = require('serve-favicon');
 
-
 const homeStartingContent = "Please feel free to compose and share your blogposts. The site is very simple and self-explanatory. Please be polite!";
 const aboutContent = "This project was part of my studies on Udemy. It uses Node, Express, Bodyparser, Ejs. The webpage was designed with Bootstrap 3 and I styled it here and there. The page deployed on Heroku via Github the database is using mongoDB.";
 const aboutContent2 ="Although it may not seem much for me personally it was a great achievement. It uses EJS Embedded JavaScript Templating. EJS lets us embed JavaScript code into HTML. It can come very handy in many different ways. It can reduce the repetition of the code."; 
 const aboutContent3 = "Let's say you have a website with 2-3 redirects to different sections of the page. You can simply write the header/footer or any other parts of the webpage only once and inject it to your HTML. Or it also can also be used to allocate the content to the site. In this App`s case it gets the data from the backend using MongoDB and runs a forEach loop to display all the blog-posts line by line. This enables us to display content that is not hard-coded, something that changes and does all this automatically. When you add or delete a post, the App will send this information back to the back-end database, make the changes and as soon as the page refreshes, these changes will be visible to you as the loop re-run using the updated database.";
 const aboutContent4 = "This was the first time I actually could truly engage with my own creation, which took everything to a whole new and very exciting level for me. Furthermore the database is located on Amazon`s free tier server in West-Virginia. Any changes you make actually will get sent there and back to you. Even now looking back to this project, it's nothing shy of amazing."
+
 
 // ejs,bodyParser,css-public //
 app.set('view engine', 'ejs');
