@@ -5,7 +5,7 @@
   </a>
 </p>
 <h3 align="center">
-  A basic full stack application using Ejs & MongoDb 
+  A basic full stack application using Ejs with Express & MongoDb 
 </h3>
 
 ## Hi there 👋
