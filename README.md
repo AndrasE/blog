@@ -11,7 +11,7 @@
 </h3>
 
 ## Hi there 👋
-
+<a href="https://andras-blog.cyclic.app/" target="_blank" rel="noopener noreferrer">https://www.udemy.com/course/the-complete-web-development-bootcamp/</a>
 This app was part of the lecture I followed on Udemy. I felt fascinated by using EJS with MongoDb the user could interact with the App and send their own post to a database, which gets displayed once the page gets refreashed. Altough it is a simple App, for me did worth more so I redisigned it and added some @medias for small devices. I think it could be a good start for beginner trying to build similar applications. 
 
 Take care, code safe! 💻
