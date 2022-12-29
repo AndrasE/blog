@@ -37,11 +37,16 @@ const postSchema = {
 // schema definition model //
 const Post = mongoose.model(`Post`, postSchema);
 
+app.get("/", function(req, res) {
+  res.render("landing", {
+  });
+});
+
 //basic rendering but looking for objects//
 //in blogDB/posts collection to load them//
 //by pass it through to home.ejs where a//
 //forEach method called on them//
-app.get("/", function(req, res) {
+app.get("/home", function(req, res) {
 
   Post.find({}, function(err, foundPosts) {
     res.render("home", {
@@ -110,7 +115,7 @@ app.post("/delete", function(req, res) {
   }, function(err) {
     if (!err) {
       console.log("Item deleted");
-      res.redirect("/")
+      res.redirect("/home")
     }
   });
 });
