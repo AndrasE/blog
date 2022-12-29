@@ -2,86 +2,109 @@ html {
   margin: 0;
   width: 100%;
 }
+
 body {
   background-image: url(/images/bg.jpg);
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: 100%;
   text-align: justify;
-  font-family:'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
 }
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
+
 body::-webkit-scrollbar-track {
   background: #e46161;
 }
+
 body::-webkit-scrollbar-thumb {
   background: #c92dc1;
 }
+
 .navbar {
-    background-image: linear-gradient(to right, #f45484, #f58faf) !important;
-    border-bottom: 1px solid whitesmoke;
-    margin-bottom: 50px;
-  }
-.navbar-brand {
-    color: #ffff !important;
-    font-size: x-large;
+  background-image: linear-gradient(to right, #f45484, #f58faf) !important;
+  border-bottom: 1px solid whitesmoke;
+  margin-bottom: 50px;
 }
+
+.navbar-brand {
+  color: #ffff !important;
+  font-size: x-large;
+}
+
 .navbar-nav li:not(:last-child) {
   padding-right: 15px;
 }
+
 .fa-pen-nib {
   padding-right: 5px;
 }
-.navbar-nav li a:hover {
-    color: #1a1c20 !important;
-}
+
 .color-me {
   color: #ffff !important;
 }
+
 .color-me i {
   margin-right: 5px;
 }
+
 i.color-me:hover {
-text-decoration: none;
+  text-decoration: none;
 }
+
 .container-fluid {
   width: 70%;
 }
+
 .card {
   background-color: #f58faf;
 }
+
 .col-sm-6 {
-  padding: 10px;
+  padding: 20px;
   opacity: 80%;
 }
+
 .card-title {
   padding-bottom: 10px;
   opacity: 1;
 }
+
 p a {
   font-weight: bold;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 a:hover {
   text-decoration: underline;
   color: initial;
-  transform: scale(1.1);
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
+
 .btn {
-  transition: all 0.3s ease;
   float: right;
   border: none;
   background-color: #f45484;
 }
-.btn:hover {
-  background-color: #f45484;
 
+.btn:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  background-color: #f45484;
+  transition: 0.1s ease-in-out;
 }
+
+.about-container {
+  margin: auto;
+  max-width: 50%;
+}
+
 .footer {
   width: 100%;
   position: fixed;
@@ -90,7 +113,7 @@ a:hover {
 
 .footer p {
   text-align: center;
-	font-size: 13px;
+  font-size: 13px;
   margin: 0;
 }
 
@@ -103,24 +126,51 @@ a:hover {
 }
 
 .kitty {
-width: 100%;
- position: relative;
- display: inline-flex;
- top: 35px;
+  width: 100%;
+  position: relative;
+  display: inline-flex;
+  top: 35px;
 }
 
 .kitty img {
   width: 180px;
-  margin: auto;  
+  margin: auto;
   height: auto;
   z-index: 2;
 }
-/* 
+
 @media screen and (max-width: 1199px) {
-  .kitty {
-    top: 45px;
+  .container-fluid {
+    width: 80%  ;
    }
 }
+@media screen and (max-width: 991px) {
+  .container-fluid {
+    width: 90%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+.container-fluid{
+  width: 100%;
+   }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav li:not(:last-child) {
+    padding-right: 5px;
+  }
+  .container-fluid{
+    width: 100%;
+     }
+  }
+  @media screen and (max-width: 433px) {
+    a.nav-link {
+      text-align: center;
+    }
+    }
+
+/* 
 
 
 @media screen and (max-width: 991px) {

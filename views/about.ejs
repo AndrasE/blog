@@ -1,12 +1,28 @@
 <%- include("partials/header"); -%>
-    <h1>About</h1>
-    <p> <%= aboutContent %> </p>
-    <p> <%= aboutContent2 %> </p>
-    <p> <%= aboutContent3 %> </p>
-    <p> <%= aboutContent4 %> </p>
+
+<div class="about-container">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                About
+              </h5>
+              <p> <%= aboutContent %> </p>
+              <p> <%= aboutContent2 %> </p>
+              <p> <%= aboutContent3 %> </p>
+              <p> <%= aboutContent4 %> </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+ 
 
     <div class="kitty">
     <img src="images/giphy.gif" alt="kitty">
     </div>
-    
+
 <%- include("partials/footer"); -%>
