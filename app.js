@@ -65,12 +65,7 @@ app.get("/about", function(req, res) {
     aboutContent4: aboutContent4
   });
 });
-//basic rendering//
-app.get("/contact", function(req, res) {
-  res.render("contact", {
-    contactContent: contactContent
-  });
-});
+
 //basic rendering//
 app.get("/compose", function(req, res) {
   res.render("compose");
@@ -86,7 +81,7 @@ app.post("/compose", function(req, res) {
   //save before redirect, before it wasn`t always loading straight after//
   post.save(function(err) {
     if (!err) {
-      res.redirect("/");
+      res.redirect("/home");
     }
   });
 });

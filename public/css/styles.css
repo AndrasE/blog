@@ -105,9 +105,22 @@ a:hover {
 .about-container {
   margin: auto;
   max-width: 50%;
-  padding: 20px 15px;
+  padding: 0 20px;
 }
 
+textarea {
+  margin-bottom: 15px;
+}
+img {
+  float: right;
+  width: 120px;
+  position: relative;
+  top:-10px;
+  left: -10px;
+}
+.about-container p:last-of-type{
+  margin-bottom: 0;
+}
 .footer {
   margin-top: 50px;
   width: 100%;
