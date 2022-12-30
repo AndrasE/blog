@@ -87,18 +87,22 @@ a:hover {
   text-decoration: underline;
   color: initial;
   scale: 1.1;
-  transition: 0.2s ease-in-out;
+  
 }
 
 .btn {
   float: right;
   border: none;
   background-color: #f45484;
+  color: white;
 }
 
 .btn:hover {
+  color: white;
   text-decoration: underline;
   background-color: #f45484;
+  transition: 0.2s ease-in-out;
+  scale: 1.1;
 }
 
 .about-container {
