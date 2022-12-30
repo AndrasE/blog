@@ -43,15 +43,11 @@ body::-webkit-scrollbar-thumb {
   padding-right: 5px;
 }
 
-.color-me {
-  color: #ffff !important;
-}
-
-.color-me i {
+.nav-link i {
   margin-right: 5px;
 }
 
-i.color-me:hover {
+i.nav-link:hover {
   text-decoration: none;
 }
 
