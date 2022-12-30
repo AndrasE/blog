@@ -6,6 +6,7 @@ const mongoose = require("mongoose");
 const app = express();
 var favicon = require('serve-favicon');
 
+const landingContent = "";
 const homeStartingContent = "Please feel free to compose and share your blogposts. The site is very simple and self-explanatory. Please be polite!";
 const aboutContent = "This project was part of my studies on Udemy. It uses Node, Express, Bodyparser, Ejs. The webpage was designed with Bootstrap 3 and I styled it here and there. The page deployed on Heroku via Github the database is using mongoDB.";
 const aboutContent2 ="Although it may not seem much for me personally it was a great achievement. It uses EJS Embedded JavaScript Templating. EJS lets us embed JavaScript code into HTML. It can come very handy in many different ways. It can reduce the repetition of the code."; 
@@ -115,7 +116,7 @@ app.post("/delete", function(req, res) {
   });
 });
 
-//heroku//
+//local + heroku/cyclic//
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
