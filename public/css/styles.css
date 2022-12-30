@@ -83,7 +83,7 @@ a:hover {
   text-decoration: underline;
   color: initial;
   scale: 1.1;
-  
+  transition: 0.17s ease-in-out;
 }
 
 .btn {
