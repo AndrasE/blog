@@ -86,7 +86,8 @@ a {
 a:hover {
   text-decoration: underline;
   color: initial;
-  transition: 0.3s ease;
+  scale: 1.1;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn {
@@ -97,9 +98,7 @@ a:hover {
 
 .btn:hover {
   text-decoration: underline;
-  transform: scale(1.1);
   background-color: #f45484;
-  transition: 0.1s ease-in-out;
 }
 
 .about-container {
@@ -111,16 +110,19 @@ a:hover {
 textarea {
   margin-bottom: 15px;
 }
+
 img {
   float: right;
   width: 120px;
   position: relative;
-  top:-10px;
+  top: -10px;
   left: -10px;
 }
-.about-container p:last-of-type{
+
+.about-container p:last-of-type {
   margin-bottom: 0;
 }
+
 .footer {
   margin-top: 50px;
   width: 100%;
@@ -161,103 +163,43 @@ img {
     width: 80%;
   }
 }
-  @media screen and (max-width: 991px) {
-    .container-fluid {
-      width: 90%;
-    }
-
-    .about-container {
-      max-width: 70%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .container-fluid {
-      width: 100%;
-    }
-
-    .about-container {
-      max-width: 90%;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .navbar-nav li:not(:last-child) {
-      padding-right: 5px;
-    }
-
-    .container-fluid {
-      width: 100%;
-    }
-
-    .about-container {
-      max-width: 100%;
-    }
-
-  }
-
-  @media screen and (max-width: 433px) {
-    a.nav-link {
-      text-align: center;
-    }
-  }
-
-  /* 
-
 
 @media screen and (max-width: 991px) {
-  .kitty {
-    top: 29px;
-   }
-}
+  .container-fluid {
+    width: 90%;
+  }
 
+  .about-container {
+    max-width: 70%;
+  }
+}
 
 @media screen and (max-width: 768px) {
-  .kitty {
-    top: 30px;
-   }
-}
-
-
-@media screen and (max-width: 450px) {
-   .container {
-    width: 99% !important  
+  .container-fluid {
+    width: 100%;
   }
-  h1{
-    font-size: 20px;
-  }
-  .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
- .navbar-brand {
-  font-size: 15px;
-  margin-bottom: 0;
-  position: absolute;
-  padding-top: 7px;
-  left: 0;
-  top: 0;
-  width: 115px;
-  line-height: 25px;
- }
 
- .navbar-right {
-  margin-top: 0;
-  margin-bottom: 0;
- }
-
- .color-me{
-  color: rgb(90, 81, 81) !important;
-  padding: 5px !important;
-  text-align: right;
-}
-hr{
-  margin-bottom: 35px;
-}
-
-.kitty {
-   top: 29px;
+  .about-container {
+    max-width: 90%;
   }
 }
 
- *
+@media screen and (max-width: 768px) {
+  .navbar-nav li:not(:last-child) {
+    padding-right: 5px;
+  }
+
+  .container-fluid {
+    width: 100%;
+  }
+
+  .about-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 433px) {
+  a.nav-link {
+    text-align: center;
+  }
+}
