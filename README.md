@@ -12,6 +12,10 @@ This app was part of a **[Udemy](https://www.udemy.com/course/the-complete-web-d
 
 Deployed on Heroku's eco-dyno, please note that it may take a few seconds for the server to wake up.
 
+<div align="center">
+<img src="https://github.com/AndrasE/raw-readme/blob/9c4de24486543db9f7378b223611919b183e59a7/thumbs/blog.png" width="420">
+</div>
+
 ## Run 🚀
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
