@@ -1,6 +1,6 @@
 <h3 align="center">
   <a href="https://andras-blog.cyclic.app/" target="_blank" rel="noopener noreferrer">
-  <img src="https://github.com/AndrasE/raw-readme/blob/main/blog-readme-img.png?raw=true" width="130px">
+  <img src="https://github.com/AndrasE/raw-readme/blob/e0ba0d38fc6f2bb201983bbc4986e59f1ae946f2/logo/blog-readme-img.png" width="130px">
   </a>
 <br/>
   Simple blog app using Ejs, Express & MongoDb
